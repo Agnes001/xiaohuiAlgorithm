@@ -1,15 +1,33 @@
 #include <iostream>
+#include <map>
 using namespace std;
+
+struct stu1 {
+    int age;
+    int id;
+    char* child;
+};
+struct stu2 {
+    int age;
+    int id;
+    char child[];
+};
+
 
 int main()
 {
-    int arr[10]{};
-    cout << &arr[9] << endl;
-    cout << &arr[10] << endl;
 
-    float f = 2.4f;
-    ++f;
-    cout << f;
+    cout << sizeof(stu1) << endl;
+
+    cout << sizeof(stu2) << endl;
+
+
+
+
+
+
+
+
 
     cin.get();
     return 0;
